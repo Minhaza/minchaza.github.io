@@ -311,7 +311,7 @@ nav{
 
 .fa-angle-double-left{
     color: white;
-    opacity: 20%;
+    opacity: 30%;
     margin-top: 25%;
     margin-left: 2%;
     position: absolute;
@@ -324,7 +324,7 @@ nav{
 }
 .fa-angle-double-right{
     color: white;
-    opacity: 20%;
+    opacity: 30%;
     margin-top: 25%;
     right: 2%;
     height: 50px;
