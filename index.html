@@ -49,12 +49,6 @@
 
         <div class = "content">
             <section class = "sect1">
-               <!-- <div class = "img1" id = "myImg"></div>
-                <div class = "img2" id = "myImage2"></div>
-                <div class = "img3" id = "myImage3"></div> 
- -->
-
-                <!-- <img class = "img1" src="images/Bg.jpg" alt=""> -->
 
                 <div class = "logo2"> </div>
                 <a href="#home" class = "arrow_left click" onclick = "plusSlides(-1)">
@@ -66,16 +60,16 @@
                </a>
                 
 
-                <div class="mySlides fade" id = "imgTest">
-                    <img src="images/Bg.jpg" >
+                <div class="slides " >
+                    <img src="images/Bg.jpg" class = "fade" >
                   </div>
 
-                  <div class="mySlides fade">
-                    <img src="images/background-adare-restaurant.jpg" >
+                  <div class="slides">
+                    <img src="images/background-adare-restaurant.jpg" class = "fade" >
                   </div>
                 
-                  <div class="mySlides fade">
-                    <img src="images/258017819_1170856080115125_8219621121093500046_n.jpg">
+                  <div class="slides">
+                    <img src="images/258017819_1170856080115125_8219621121093500046_n.jpg " class = "fade">
                   </div>
                 
                     <div style="text-align:center">
@@ -119,23 +113,21 @@
             document.getElementById("arrowRight").style.opacity = "100%";
         }
         
+
         var slideIndex = 1;
         showSlides(slideIndex);
 
         // Next/previous controls
         function plusSlides(n) {
             showSlides(slideIndex += n);
-            
         }
-
         // Thumbnail image controls
         function currentSlide(n) {
             showSlides(slideIndex = n);
         }
-
         function showSlides(n) {
             var i;
-            var slides = document.getElementsByClassName("mySlides");
+            var slides = document.getElementsByClassName("slides");
             var dots = document.getElementsByClassName("dot");
 
             if (n > slides.length) {slideIndex = 1}

@@ -193,24 +193,42 @@ nav{
     
   }
 
-  /* .fade {
+/* bg animation */
+.fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
-  }
+}
 
   @-webkit-keyframes fade {
-    from {opacity: .4}
+    from {opacity: 0.6}
     to {opacity: 1}
-  }
+}
   
-  @keyframes fade {
-    from {opacity: .4}
+@keyframes fade {
+    from {opacity: 0.6}
     to {opacity: 1}
-  }  */
+} 
 
-.mySlides img{
+  /* .fade {
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 1s;
+    -o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  } */
+
+/* change bg */
+.slides img{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -219,86 +237,27 @@ nav{
     height: 100%;
     width: 100%;
     z-index: -5;
-
-    transition: 0.5s ease;
 } 
+
 .dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: rgba(255, 255, 255, 0.816);
+    /* background-color: rgba(255, 255, 255, 0.816); */
+    border: 1px solid rgba(255, 255, 255, 0.83);
     border-radius: 50%;
     display: inline-block;
 
     margin-top: 50%;
     padding-left: 10px;
     transition: background-color 0.6s ease;
-  }
+}
 .active, .dot:hover {
-    background-color: #919090bb;
+    background-color: #ffffffbb;
 }
   
 
-
-/* .img1{
-    background-image: url(images/Bg.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -5;
-
-    transition: 0.5s;
-}
-
-
-.img2 {
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    
-    background-image: url(images/background-adare-restaurant.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    z-index: -4;
-   
-    transition: 0.5s;
-}
-
-.img3 {
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    
-    background-image: url(images/258017819_1170856080115125_8219621121093500046_n.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    z-index: -4;
-   
-    transition: 0.5s;
-} */
-
-
-/* .img2{
-    background-image: url(images/background-adare-restaurant.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -2;
-    opacity: 0;
-} */
 
 .sect1 .logo2{
     height: 160px;
@@ -312,7 +271,7 @@ nav{
 .fa-angle-double-left{
     color: white;
     opacity: 30%;
-    margin-top: 25%;
+    margin-top: 22%;
     margin-left: 2%;
     position: absolute;
 
@@ -325,7 +284,7 @@ nav{
 .fa-angle-double-right{
     color: white;
     opacity: 30%;
-    margin-top: 25%;
+    margin-top: 22%;
     right: 2%;
     height: 50px;
     position: absolute;
