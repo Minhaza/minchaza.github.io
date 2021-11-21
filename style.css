@@ -21,6 +21,23 @@ html{
     padding: 0;
     font-family: "Comfortaa", sans-serif;
 }
+
+/* icon */
+.logo1{
+    background-image: url(images/logo_white2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo2{
+    background-image: url(images/500x500.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* body */
 body{
     /*overflow-y: hidden;*/
 
@@ -36,31 +53,26 @@ body{
     
 }
 header{
-    
     width: 100%;
     height: 60px;
     display: flex;
     position: fixed;
-    background-color: #24252a;
+    background-color: #24252acb;
+
     padding: 5px 0px 5px;
     margin: 0;
     
 }
 
-.logo1{
-    background-image: url(images/logo_white2.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+header .logo1{
     height: 50px;
     width: 100px;
-
     cursor: pointer;
 
-    margin-left: 14%;
+    margin-left: 47%;
+    position: absolute;
 
 }
-
 
 nav{
     width: 100%;
@@ -69,7 +81,7 @@ nav{
     align-items: center;
 
 }
-
+/* nav left buttons */
 .nav_items li{
     display: inline-block;
     padding: 0px 7px;
@@ -93,13 +105,16 @@ nav{
     color: black;
 }
 
+/* menu icon */
 .nav_icon{
-    margin-left: 80vh;
+    right: 1%;
+    top: 25%;
+
+    position: absolute;
     cursor: pointer;
     
 }
 .bar1, .bar2, .bar3{
-
     width: 30px;
     height: 5px;
     border-radius: 12%;
@@ -107,43 +122,46 @@ nav{
     margin: 3px 0;
 }
 
+/*menu overlay*/
 .overlay {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 0.9);
     overflow-x: hidden;
+
     transition: 0.5s;
-  }
+}
   
-  .overlay-content {
+.overlay_content {
     position: relative;
     top: 25%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
-  }
-  
+}
+
 .overlay a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
     color: #818181;
     display: block;
+
     transition: 0.3s;
 }
   
-  .overlay a:hover, .overlay a:focus {
+.overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
 }
   
 .overlay .closebtn {
     position: absolute;
-    top: 20px;
+    top: 10px;
     right: 45px;
     font-size: 60px;
 }
@@ -156,64 +174,166 @@ nav{
     right: 35px;
     }
 }
-/*
 
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    position: fixed; 
-    top: 0; 
-    width: 100%; 
-}
-  
-.navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-  
-
-.home a:hover {
-    background: #ddd;
-    color: black;
- }
-
-.navbar a:after{
-    content: " | ";  
-    display: inline-block;
-    margin: 0 .3333rem;
-}
-*/
+/* section */
 .content section{
     display: inline-block;
     width: 100%;
     height: 100vh;
     
 }
+
+/* section 1 */
 .sect1{
+    display: flex;
+}
+.mySlides {
+    display: none;
+    
+    
+  }
+
+  /* .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }  */
+
+.mySlides img{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -5;
+
+    transition: 0.5s ease;
+} 
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgba(255, 255, 255, 0.816);
+    border-radius: 50%;
+    display: inline-block;
+
+    margin-top: 50%;
+    padding-left: 10px;
+    transition: background-color 0.6s ease;
+  }
+.active, .dot:hover {
+    background-color: #919090bb;
+}
+  
+
+
+/* .img1{
     background-image: url(images/Bg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -5;
 
+    transition: 0.5s;
 }
-.logo2{
-    background-image: url(images/Logo_official.png);
+
+
+.img2 {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    
+    background-image: url(images/background-adare-restaurant.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 150px;
-    width: 400px;
-    
-    margin: 20% 0% 0% 36%;
 
-
-    
+    z-index: -4;
+   
+    transition: 0.5s;
 }
 
+.img3 {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    
+    background-image: url(images/258017819_1170856080115125_8219621121093500046_n.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
+    z-index: -4;
+   
+    transition: 0.5s;
+} */
+
+
+/* .img2{
+    background-image: url(images/background-adare-restaurant.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0;
+} */
+
+.sect1 .logo2{
+    height: 160px;
+    width: 480px;
+    margin: 20% 0% 0% 32.5%;
+    position: absolute;
+
+    transition: 0.2s;
+}
+
+.fa-angle-double-left{
+    color: white;
+    opacity: 20%;
+    margin-top: 25%;
+    margin-left: 2%;
+    position: absolute;
+
+    transition: 0.2s;
+}
+.fa-angle-double-left:hover{
+    font-size: 55px;
+    opacity: 100%;
+}
+.fa-angle-double-right{
+    color: white;
+    opacity: 20%;
+    margin-top: 25%;
+    right: 2%;
+    height: 50px;
+    position: absolute;
+
+    transition: 0.2s;
+}
+.fa-angle-double-right:hover{
+    font-size: 55px;
+    opacity: 100%;
+}
 
