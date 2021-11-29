@@ -1,150 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
+
 <body>
-    
-    <div class = "container">
+    <script src="myJs.js"></script>
+
+    <div class="container">
         <header>
-            
-          
+
+            <!-- navbar here -->
             <nav>
-                <ul class = "nav_items">
+                <ul class="nav_items">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#news">About us</a></li>
                     <li><a href="#contact">Places to go</a></li>
                     <li><a href="#place">Things to do</a></li>
                 </ul>
 
-                <a href="#home" class = "logo1" ></a>
+                <a href="#home" class="logo1"></a>
 
-                    <div class="nav_menu" onclick="openMenu()">
-                        <div class = "nav_icon">
-                            <div class="bar1"></div>
-                            <div class="bar2"></div>
-                            <div class="bar3"></div>
-                        </div>
+                <!-- menu here -->
+                <div class="nav_menu" onclick="openMenu()">
+                    <div class="nav_icon">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
                     </div>
-                    <div id = "menu" class="overlay">
-                        <a href="#" class="closebtn" onclick="closeMenu()">&times;</a>
-                            
-                        <div class="overlay_content">
-                            <a href="#">Home</a>
-                            <a href="#">About us</a>
-                            <a href="#">Places to go</a>
-                            <a href="#">Things to do</a>
- 
-                        </div>
+                </div>
+                <div id="menu" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+
+                    <div class="overlay_content">
+                        <a href="#">Home</a>
+                        <a href="#">About us</a>
+                        <a href="#">Places to go</a>
+                        <a href="#">Things to do</a>
+
                     </div>
-                
-            </nav>  
-            
+                </div>
+
+            </nav>
+
         </header>
 
-        <div class = "content">
-            <section class = "sect1">
+        <!-- content -->
+        <div class = "small_container">
+            
+            <!-- section 1 -->
+            <section class="sect1">
 
-                <div class = "logo2"> </div>
-                <a href="#home" class = "arrow_left click" onclick = "plusSlides(-1)">
-                    <i class="fas fa-angle-double-left fa-3x" id = "arrowLeft"></i>
+                <div class="logo2" id="logo"> </div>
+                <a href="#home" class="arrow_left click" onclick="plusSlides(-1)">
+                    <i class="fas fa-angle-double-left fa-3x" id="arrowLeft"></i>
                 </a>
 
-               <a href="#home" class = "arrow_right click" onclick = "plusSlides(1)()">
-                    <i class="fas fa-angle-double-right fa-3x" id = "arrowRight"></i>
-               </a>
-                
+                <a href="#home" class="arrow_right click" onclick="plusSlides(1)">
+                    <i class="fas fa-angle-double-right fa-3x" id="arrowRight"></i>
+                </a>
 
-                <div class="slides " >
-                    <img src="images/Bg.jpg" class = "fade" >
-                  </div>
 
-                  <div class="slides">
-                    <img src="images/background-adare-restaurant.jpg" class = "fade" >
-                  </div>
-                
-                  <div class="slides">
-                    <img src="images/258017819_1170856080115125_8219621121093500046_n.jpg " class = "fade">
-                  </div>
-                
-                    <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span> 
-                        <span class="dot" onclick="currentSlide(2)"></span> 
-                        <span class="dot" onclick="currentSlide(3)"></span> 
-                    </div>
-        
-                
+                <div class="slides ">
+                    <img src="images/Bg.jpg" class="fade">
+                </div>
+
+                <div class="slides">
+                    <img src="images/background-adare-restaurant.jpg" class="fade">
+                </div>
+
+                <div class="slides">
+                    <img src="images/258017819_1170856080115125_8219621121093500046_n.jpg " class="fade">
+                </div>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+
             </section>
 
+            <!-- section 2 -->
+            <!-- About us -->
             <section class = "sect2">
-                <h1>UwU</h1>
+                <div
+                    style = "background-color: #333333; width: 115vh; height: 100vh; right: 0; position: absolute; z-index: -5;">
+                </div>
+                <div class="img4"></div>
+                <div class="img5"></div>
+
+                <div class = "content">
+                    <h1>Một câu ở đai</h1>
+                    <p>About us</p>
+                    <p>Alo alo</p>
+                </div>
+           
             </section>
+            
+            <!-- section 3 -->
+            <!-- About us -->
             <section class = "sect3">
-                <h1>UwU</h1>
+                <div
+                    style = "background-color: #333333; width: 79vh; height: 100%; right: 0; position: absolute; z-index: -5;">
+                </div>
+                <div class = "img6"></div>
+
+                <div class = "content">
+                    <h1>Một câu ở đai</h1>
+                    <p>About us</p>
+                    <p>Alo alo</p>
+                </div>
+            </section>
+
+            <!-- section 4 -->
+            <!-- video -->
+            <section class = "sect4">
+                <div class = "vid"></div>
+            </section>
+
+            <!-- section 5 -->
+            <!-- Places to go -->
+            <section class = "sect5">
+                <div
+                    style = "background-color: #333333; width: 72vh; height: 100%; position: absolute; z-index: -5;">
+                </div>
+
+                <div class = "content"></div>
+                <div class = "img7"></div>
+            </section>
+
+             <!-- section 6 -->
+             <!-- Things to do -->
+             <section class = "sect6">
+                <div
+                    style = "background-color: #333333; width: 72vh; height: 100%; position: absolute; z-index: -5;">
+                </div>
+
+                <div class = "content"></div>
+                <div class = "img8"></div>
+                <div class = "img9"></div>
+          
+            </section>
+
+             <!-- section 7 -->
+             <!-- Slideshow -->
+             <section class = "sect7" style = "background-color: #333333;">
+
+                <div class = "img10"></div>
+                <div class = "img11"></div>
+                <div class = "img12"></div>
+          
+            </section>
+
+            <!-- section 8 -->
+            <!-- Travel tips -->
+            <section class = "sect8">
+                <div class = "content_top">
+
+                </div>
+
+                <div class = "content_bot">
+
+                </div>
             </section>
         </div>
-     
-        <main>  
-            
+
+        <main>
+
         </main>
 
-        <footer></footer>
-        
+        <footer>
+            <div class = "map"></div>
+            <div class = "content"></div>
+        </footer>
+
+        <script>showSlides(slideIndex);</script>
     </div>
-    
-    
-    <script>
-        function openMenu() {
-            document.getElementById("menu").style.width = "100%";
-            document.getElementById("logo").style.opacity = "0%";
-            document.getElementById("arrowLeft").style.opacity = "0%";
-            document.getElementById("arrowRight").style.opacity = "0%";
-            
-        }
-        function closeMenu() {
-            document.getElementById("menu").style.width = "0%";
-            document.getElementById("logo").style.opacity = "100%";
-            document.getElementById("arrowLeft").style.opacity = "100%";
-            document.getElementById("arrowRight").style.opacity = "100%";
-        }
-        
 
-        var slideIndex = 1;
-        showSlides(slideIndex);
 
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-        // Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("slides");
-            var dots = document.getElementsByClassName("dot");
 
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slides[slideIndex-1].style.display = "block";
-                        for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-            }
-           
 
-    </script>
 
 </body>
+
 </html>
