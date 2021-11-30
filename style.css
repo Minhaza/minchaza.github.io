@@ -69,8 +69,10 @@ header .logo1{
     height: 50px;
     width: 100px;
     cursor: pointer;
- 
-    margin-left: 47%;
+    margin: auto;
+    left: 0;
+    right: 0;
+
     position: absolute;
 
 }
@@ -193,6 +195,51 @@ nav{
 .sect1{
     display: flex;
 }
+
+
+.sect1 .logo2{
+    height: 25vh; /*160px*/
+    width: 70vh;
+    position: absolute;
+    margin: 33vh auto auto auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    z-index: -2;
+    transition: 0.2s;
+}
+
+.fa-angle-double-left{
+    color: white;
+    opacity: 30%;
+    margin-top: 39vh;
+    margin-left: 4vh;
+    position: absolute;
+    z-index: 0;
+
+    transition: 0.2s;
+}
+
+.fa-angle-double-left:hover{
+    font-size: 55px;
+    opacity: 100%;
+}
+.fa-angle-double-right{
+    color: white;
+    opacity: 30%;
+    margin-top: 41vh;
+    right: 4vh;
+    position: absolute;
+    z-index: 0;
+
+    transition: 0.2s;
+}
+.fa-angle-double-right:hover{
+    font-size: 55px;
+    opacity: 100%;
+}
+
 .mySlides {
     display: none;
     
@@ -255,7 +302,7 @@ nav{
     border-radius: 50%;
     display: inline-block;
 
-    margin-top: 50%;
+    margin-top: 90vh;
     padding-left: 10px;
     transition: background-color 0.6s ease;
 }
@@ -264,46 +311,6 @@ nav{
 }
   
 
-
-.sect1 .logo2{
-    height: 25vh; /*160px*/
-    width: 70vh;
-    margin: 35vh 0 0 57vh;
-    position: absolute;
-    z-index: -2;
-    transition: 0.2s;
-}
-
-.fa-angle-double-left{
-    color: white;
-    opacity: 30%;
-    margin-top: 40vh;
-    margin-left: 4vh;
-    position: absolute;
-    z-index: 0;
-
-    transition: 0.2s;
-}
-
-.fa-angle-double-left:hover{
-    font-size: 55px;
-    opacity: 100%;
-}
-.fa-angle-double-right{
-    color: white;
-    opacity: 30%;
-    margin-top: 40vh;
-    right: 4vh;
-    height: 50px;
-    position: absolute;
-    z-index: 0;
-
-    transition: 0.2s;
-}
-.fa-angle-double-right:hover{
-    font-size: 55px;
-    opacity: 100%;
-}
 
 /* section 2 */
 
@@ -316,21 +323,21 @@ nav{
     border: 5px solid blue ;
     width: 53vh;
     height: 80vh;
-    margin: 0 0 0 63vh;
+    margin: 0 0 0 83vh;
 }
 .img5{
     position: absolute;
     border: 5px solid blue ;
     width: 60vh;
     height: 80vh;
-    margin: 8vh 0 0 123vh;
+    margin: 8vh 0 0 143vh;
 }
 
 /* section 3 */
 .sect3 .img6{
     position: absolute;
     border: 5px solid blue ;
-    width: 110vh;
+    width: 120vh;
     height: 100%;
 }
 .sect3 .content{
@@ -339,7 +346,7 @@ nav{
     border: 5px solid blue ;
     width: 82vh;
     height: 70vh;
-    margin: 14vh 0 0 100vh;
+    margin: 14vh 0 0 110vh;
 }
 
 /* section 4 */
@@ -353,9 +360,9 @@ nav{
 /* section 5 */
 .sect5 .content{
     position: absolute;
-    width: 50vh;
-    height: 60vh;
-    margin: 17vh 0 0 5vh;
+    width: 55vh;
+    height: 66vh;
+    margin: 18vh 0 0 8vh;
     border: 5px solid blue ;
 }
 
@@ -363,14 +370,14 @@ nav{
     position: absolute;
     width: 125vh;
     height: 80vh;
-    margin: 10vh 0 0 60vh;
+    margin: 10vh 0 0 75vh;
     border: 5px solid blue ;
 }
 
 /* section 6 */
 .sect6 .content{
     position: absolute;
-    width: 72vh;
+    width: 89vh;
     height: 70vh;
     margin: 17vh 0 0 0;
     border: 5px solid blue;
@@ -381,15 +388,15 @@ nav{
     position: absolute;
     width: 72vh;
     height: 100vh;
-    margin: 0 0 0 72vh;
+    margin: 0 0 0 89vh;
     border: 5px solid blue ;
 
 }
-.img9{
+.content2{
     position: absolute;
-    width: 48vh;
+    width: 54vh;
     height: 30vh;
-    margin: 35vh 0 0 140vh;
+    margin: 35vh 0 0 155vh;
     border: 5px solid blue ;
 }
 
@@ -401,15 +408,15 @@ nav{
 .content_top{
     position: absolute;
     width: 100%;
-    height: 20vh;
-    margin-top: 10vh;
+    height: 18vh;
+    margin-top: 7vh;
     border: 5px solid blue ;
 }
 .content_bot{
     position: absolute;
-    width: 90%;
-    height: 50vh;
-    margin: 35vh 10vh 0 10vh;
+    width: 80%;
+    height: 30vh;
+    margin: 35vh 10vh 0 20vh;
     border: 5px solid blue ;
 }
 
@@ -428,7 +435,7 @@ footer{
 footer .content{
     position: absolute;
     width: 50%;
-    height: 80%;
+    height: 100%;
     margin: 0 0 0 50%;
 
     border: 5px solid blue ;
