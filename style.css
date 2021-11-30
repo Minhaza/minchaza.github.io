@@ -318,25 +318,35 @@ nav{
     display: flex;
 }
 
+.content{
+    position: absolute;
+    border: 5px solid blue ;
+    width: 65vh;
+    height: 80vh;
+    margin: 10vh 0 0 10vh;
+
+    color: white;
+}
 .img4{
     position: absolute;
     border: 5px solid blue ;
     width: 53vh;
     height: 80vh;
-    margin: 0 0 0 83vh;
+    margin: 0 0 0 75vh;
 }
 .img5{
     position: absolute;
     border: 5px solid blue ;
     width: 60vh;
     height: 80vh;
-    margin: 8vh 0 0 143vh;
+    margin: 8vh 0 0 137vh;
 }
 
 /* section 3 */
 .sect3 .img6{
     position: absolute;
     border: 5px solid blue ;
+    
     width: 120vh;
     height: 100%;
 }
@@ -390,6 +400,7 @@ nav{
     height: 100vh;
     margin: 0 0 0 89vh;
     border: 5px solid blue ;
+    z-index: -1;
 
 }
 .content2{
@@ -398,6 +409,9 @@ nav{
     height: 30vh;
     margin: 35vh 0 0 155vh;
     border: 5px solid blue ;
+    background-color: #333333;
+    
+    color: white;
 }
 
 /* section 7 */
