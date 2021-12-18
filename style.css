@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Nunito:wght@700;800;900&family=Raleway:wght@900&display=swap');
 
 html{
     height: 100%;
@@ -12,16 +12,27 @@ html{
 
     margin: 0;
     padding: 0;
+
+    font-family: 'Comfortaa', cursive;
     
 
 }
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Comfortaa", sans-serif;
+    line-height: 1.3;
+
+    
 }
 
+h1{
+    font-size: 45px;
+    font-weight: 900;
+    padding-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+}
 /* icon */
 .logo1{
     background-image: url(images/logo_white2.png);
@@ -43,6 +54,7 @@ body{
 
     width: 100%;
     height: 100%;
+    
     
 }
 .container{
@@ -87,7 +99,7 @@ nav{
 }
 
   
-    
+
 /* nav left buttons */
 .nav_items li{
     display: inline-block;
@@ -110,6 +122,7 @@ nav{
 .nav_items li a:hover{
     background-color: white;
     color: black;
+    border-radius: 5px;
 }
 
 /* menu icon */
@@ -188,13 +201,15 @@ nav{
 .small_container section{
     display: inline-block;
     width: 100%;
-    height: 100vh;
+    height: 99vh;
     
 }
 
 /* section 1 */
 .sect1{
     display: flex;
+    
+    
 }
 
 
@@ -202,7 +217,7 @@ nav{
     height: 25vh; /*160px*/
     width: 70vh;
     position: absolute;
-    margin: 33vh auto auto auto;
+    margin: 39vh auto auto auto;
     left: 0;
     right: 0;
     text-align: center;
@@ -214,7 +229,7 @@ nav{
 .fa-angle-double-left{
     color: white;
     opacity: 30%;
-    margin-top: 39vh;
+    margin-top: 45vh;
     margin-left: 4vh;
     position: absolute;
     z-index: 0;
@@ -229,7 +244,7 @@ nav{
 .fa-angle-double-right{
     color: white;
     opacity: 30%;
-    margin-top: 41vh;
+    margin-top: 45vh;
     right: 4vh;
     position: absolute;
     z-index: 0;
@@ -255,7 +270,7 @@ nav{
     animation-duration: 1.5s;
 }
 
-  @-webkit-keyframes fade {
+@-webkit-keyframes fade {
     from {opacity: 0.6}
     to {opacity: 1}
 }
@@ -265,21 +280,6 @@ nav{
     to {opacity: 1}
 } 
 
-  /* .fade {
-    animation: fadeIn ease 1s;
-    -webkit-animation: fadeIn ease 1s;
-    -moz-animation: fadeIn ease 1s;
-    -o-animation: fadeIn ease 1s;
-    -ms-animation: fadeIn ease 1s;
-  }
-  @keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  } */
 
 /* change bg */
 .slides img{
@@ -302,6 +302,7 @@ nav{
     border: 1px solid rgba(255, 255, 255, 0.83);
     border-radius: 50%;
     display: inline-block;
+  
 
     margin-top: 90vh;
     padding-left: 10px;
@@ -317,72 +318,185 @@ nav{
 
 .sect2{
     display: flex;
+
+    
 }
 
-.content{
+.sect2 .content{
     position: absolute;
-    border: 5px solid blue ;
-    width: 65vh;
+    /* border: 5px solid blue ; */
+    width: 95vh;
     height: 80vh;
-    margin: 10vh 0 0 10vh;
+    margin: 15vh 0 0 10vh;
 
-    color: white;
+    /* color: white; */
 }
+
+.sect2 p:nth-child(1){
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: rgb(255, 166, 0);
+
+    font-family: 'Nunito', sans-serif;
+}
+
+.sect2 p:nth-child(2){
+    font-size: 25px;
+    text-align:justify;
+}
+
+
 .img4{
     position: absolute;
-    border: 5px solid blue ;
+    
     width: 53vh;
     height: 80vh;
-    margin: 0 0 0 75vh;
+    margin: 1vh 0 0 85vh;
+    
+    background-image: url("images/P1-sect-2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+    /* border: 5px solid blue ; */
 }
+
 .img5{
     position: absolute;
-    border: 5px solid blue ;
     width: 60vh;
     height: 80vh;
-    margin: 8vh 0 0 137vh;
+    margin: 8vh 0 0 147vh;
+
+    background-image: url("images/P1-sect-2(2).jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* border: 5px solid blue ; */
 }
 
 /* section 3 */
 .sect3 .img6{
-    position: absolute;
-    border: 5px solid blue ;
-    
+    position: absolute;    
     width: 120vh;
     height: 100%;
+
+    background-image: url("images/P1-sect-3(1).jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* border: 5px solid blue ; */
+
 }
 .sect3 .content{
     position: absolute;
     background-color: white;
-    border: 5px solid blue ;
     width: 82vh;
     height: 70vh;
     margin: 14vh 0 0 110vh;
+    
+    /* border: 5px solid blue ; */
+}
+
+
+.sect3 p:nth-child(2){
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: rgb(255, 166, 0);
+
+    font-family: 'Nunito', sans-serif;
+}
+.sect3 p:nth-child(3){
+    font-size: 25px;
+    text-align: justify;
 }
 
 /* section 4 */
-.vid{
+.sect4{
+    width: 100%;
+    height: 50vh !important;
+
+   
+}
+.quote{
     position: absolute;
     width: 100%;
-    height: 100%;
-    border: 5px solid blue ;
+    height: 50%;
+    
+    background-image: url("images/123-removebg-preview.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 350px;
+    margin-top: 5vh;
+
+    /* border: 5px solid blue ; */
 }
+.sect4 .content{
+    margin: 11vh auto;
+    width: 80%;
+
+    font-size: 35px;
+    text-align: center;
+    /* border: 5px solid blue ;  */
+}
+
 
 /* section 5 */
 .sect5 .content{
     position: absolute;
-    width: 55vh;
+    width: 62vh;
     height: 66vh;
-    margin: 18vh 0 0 8vh;
-    border: 5px solid blue ;
+    margin: 18vh 0 0 10vh;
+
+    color: white;
+    /* border: 5px solid blue ; */
+}
+.sect5 p:nth-child(2){
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: rgb(255, 166, 0);
+
+    font-family: 'Nunito', sans-serif;
+}
+.sect5 p:nth-child(3){
+    font-size: 25px;
+    text-align: justify;
+
+}
+.sect5 a{
+    position: absolute;
+    background-color: white;
+    
+    box-shadow: 3px 5px;
+    margin-top: 7vh;
+    padding: 10px 50px 10px 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+}
+.sect5 a:hover{
+    /* background-color: rgba(0, 0, 0, 0.36); */
+    background-color: orange;
+    box-shadow: 4px 6px black;
+    color: white;
+  
 }
 
 .img7{
     position: absolute;
     width: 125vh;
     height: 80vh;
-    margin: 10vh 0 0 75vh;
-    border: 5px solid blue ;
+    margin: 10vh 0 0 80vh;
+
+    background-image: url("images/P1-sect-5.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* border: 5px solid blue ; */
 }
 
 /* section 6 */
@@ -391,16 +505,53 @@ nav{
     width: 89vh;
     height: 70vh;
     margin: 17vh 0 0 0;
-    border: 5px solid blue;
+    /* border: 5px solid blue; */
     background-color: white;
 
 }
+
+.sect6 p:nth-child(2){
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: rgb(255, 166, 0);
+
+    font-family: 'Nunito', sans-serif;
+}
+.sect6 p:nth-child(3){
+    font-size: 25px;
+    text-align: justify;
+
+}
+.sect6 a{
+    position: absolute;
+    background-color: black;
+    
+    box-shadow: 3px 5px;
+    margin-top: 7vh;
+    padding: 10px 50px 10px 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+.sect6 a:hover{
+    background-color: orange;
+    box-shadow: 4px 6px rgba(0, 0, 0, 0.653);
+    color: black;
+  
+}
+
 .img8{
     position: absolute;
     width: 72vh;
     height: 100vh;
     margin: 0 0 0 89vh;
-    border: 5px solid blue ;
+
+    background-image: url("images/P1-sect-6\(1\).jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* border: 5px solid blue ; */
     z-index: -1;
 
 }
@@ -409,9 +560,11 @@ nav{
     width: 54vh;
     height: 30vh;
     margin: 35vh 0 0 155vh;
-    border: 5px solid blue ;
+    /* border: 5px solid blue ; */
     background-color: #333333;
-    
+
+    font-size: 25px;
+    text-align: center;
     color: white;
 }
 

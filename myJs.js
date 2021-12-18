@@ -16,8 +16,8 @@ function closeMenu() {
     document.getElementById("arrowRight").style.opacity = "100%";
 }
 
-
 var slideIndex = 1;
+showSlides(1, 0);
 
 
 
@@ -27,11 +27,24 @@ var slideIndex = 1;
 // Next/previous controls
 function plusSlides(n) {
     showSlides(slideIndex += n);
-}
+  }
+  
 // Thumbnail image controls
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
+
+// function showSlides(n, no) {
+//     var i;
+//     var x = document.getElementsByClassName(slideId[no]);
+//     if (n > x.length) {slideIndex[no] = 1}    
+//     if (n < 1) {slideIndex[no] = x.length}
+//     for (i = 0; i < x.length; i++) {
+//        x[i].style.display = "none";  
+//     }
+//     x[slideIndex[no]-1].style.display = "block";  
+//   }
+
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("slides");
@@ -49,7 +62,6 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
-
 
 
 // This is hiding navbar 
