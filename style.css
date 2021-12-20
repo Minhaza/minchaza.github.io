@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Nunito:wght@700;800;900&family=Raleway:wght@900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Nunito:ital,wght@0,700;0,800;0,900;1,700&family=Raleway:wght@900&display=swap');
 html{
     height: 100%;
     width: 100%;
@@ -33,6 +32,13 @@ h1{
     padding-bottom: 20px;
     font-family: 'Nunito', sans-serif;
 }
+h2{
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Nunito', sans-serif;
+}
+
+
 /* icon */
 .logo1{
     background-image: url(images/logo_white2.png);
@@ -209,12 +215,11 @@ nav{
 .sect1{
     display: flex;
     
-    
 }
 
 
 .sect1 .logo2{
-    height: 25vh; /*160px*/
+    height: 25vh; 
     width: 70vh;
     position: absolute;
     margin: 39vh auto auto auto;
@@ -228,7 +233,7 @@ nav{
 
 .fa-angle-double-left{
     color: white;
-    opacity: 30%;
+    opacity: 50%;
     margin-top: 45vh;
     margin-left: 4vh;
     position: absolute;
@@ -236,14 +241,9 @@ nav{
 
     transition: 0.2s;
 }
-
-.fa-angle-double-left:hover{
-    font-size: 55px;
-    opacity: 100%;
-}
 .fa-angle-double-right{
     color: white;
-    opacity: 30%;
+    opacity: 50%;
     margin-top: 45vh;
     right: 4vh;
     position: absolute;
@@ -251,17 +251,10 @@ nav{
 
     transition: 0.2s;
 }
-.fa-angle-double-right:hover{
+.fa-angle-double-left:hover, .fa-angle-double-right:hover{
     font-size: 55px;
     opacity: 100%;
 }
-
-.mySlides {
-    display: none;
-    
-    
-  }
-
 /* bg animation */
 .fade {
     -webkit-animation-name: fade;
@@ -282,7 +275,7 @@ nav{
 
 
 /* change bg */
-.slides img{
+.slideshow_container img{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -293,22 +286,20 @@ nav{
     z-index: -5;
 } 
 
-.dot {
+.dot{
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 2px;
-    /* background-color: rgba(255, 255, 255, 0.816); */
+    margin: 2px;
     border: 1px solid rgba(255, 255, 255, 0.83);
     border-radius: 50%;
     display: inline-block;
   
-
     margin-top: 90vh;
     padding-left: 10px;
     transition: background-color 0.6s ease;
 }
-.active, .dot:hover {
+.active, .dot:hover{
     background-color: #ffffffbb;
 }
   
@@ -366,7 +357,7 @@ nav{
     position: absolute;
     width: 60vh;
     height: 80vh;
-    margin: 8vh 0 0 147vh;
+    margin: 8vh 0 0 145vh;
 
     background-image: url("images/P1-sect-2(2).jpg");
     background-position: center center;
@@ -543,8 +534,8 @@ nav{
 .img8{
     position: absolute;
     width: 72vh;
-    height: 100vh;
-    margin: 0 0 0 89vh;
+    height: 90vh;
+    margin: 5vh 0 0 89vh;
 
     background-image: url("images/P1-sect-6\(1\).jpg");
     background-position: center center;
@@ -569,35 +560,138 @@ nav{
 }
 
 /* section 7 */
+/* .mySlides2 {
+    display: none;
+  }
+  
+.mySlides2 img{
+
+    vertical-align: middle;
+
+}
+
+.cursor {
+    cursor: pointer;
+}
+  
+.numberText {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+
+}
+
+.caption_container {
+    position: absolute;
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+    margin: 10vh 102vh;
+  }
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+
+.column {
+    float: left;
+    width: 30%;
+}
+
+.gallery {
+    opacity: 0.6;
+  }
+  
+.active, .gallery:hover {
+    opacity: 1;
+}  
+ */
 
 
 
-/* section 8 */
-.content_top{
+/* section 8 sect8*/
+.sect8 .content_top{
     position: absolute;
     width: 100%;
     height: 18vh;
     margin-top: 7vh;
-    border: 5px solid blue ;
+    text-align: center;
+    
 }
-.content_bot{
+
+.sect8 .content_top h1{
+    font-size: 70px;
+    color: orange;
+    padding: 0;
+}
+.sect8 .content_top h1:before {
+    content: "";
+    display: block;
+    width: 76vh;
+    height: 3px;
+    background: orange;
+    left: 0;
+    top: 35%;
     position: absolute;
-    width: 80%;
-    height: 30vh;
-    margin: 35vh 10vh 0 20vh;
-    border: 5px solid blue ;
 }
+.sect8 .content_top h1:after {
+    content: "";
+    display: block;
+    width: 76vh;
+    height: 3px;
+    background: orange;
+    right: 0;
+    top: 35%;
+    position: absolute;
+}
+
+.sect8 .content_top p{
+    font-size: 30px;
+}
+
+.sect8 .content_bot{
+    display: flex;
+    width: 86%;
+    height: 50vh;
+    margin: auto;
+    margin-top: 33vh;
+
+    justify-content: space-between;
+    text-align: center;
+    /* border: 5px solid blue ; */
+}
+.sect8 .content_bot .icon{
+    color: orange;
+}
+
+.sect8 .content_bot h2{
+    padding-top: 5vh;
+    font-size: 23px;
+}
+.pa{
+    padding-top: 5vh;
+}
+
+
+
 
 
 /* Footer/sect9 */
 footer{
     height: 100vh;
+    color: white;
 }
+
 .map{
     position: absolute;
     width: 50%;
     height: 100%;
-    border: 5px solid blue ;
+    /* border: 5px solid blue ; */
 
 }
 footer .content{
@@ -605,6 +699,107 @@ footer .content{
     width: 50%;
     height: 100%;
     margin: 0 0 0 50%;
+    background-color: #333333;
 
-    border: 5px solid blue ;
+    /* border: 5px solid blue ; */
+}
+
+
+footer .content_top{
+    margin-top: 6vh;
+}
+footer .content_top h2{
+    font-style: italic;
+}
+footer form{
+    width: 67%;
+}
+footer input{
+    width: 100%;
+    padding: 3px 2px 3px 7px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+footer input[type=text]:focus {
+    border: 2px solid #555;
+}
+::placeholder{
+    font-family: 'Comfortaa', cursive;
+}
+
+footer .content_top a{
+    height: 30px;
+    text-decoration: none;
+    color: black;
+
+    font-weight: 900;
+    font-family: 'Nunito', sans-serif;
+
+    background-color: orange;
+    box-shadow: 2px 4px;
+    padding: 5px 15px 0 15px;
+    border-radius: 40px;
+    margin-left: 20px;
+    margin-top: 8px;
+
+}
+footer .content_top a:hover{
+    box-shadow: 4px 6px black;
+    color: white;
+}
+
+
+footer .line{
+    content: "";
+    display: block;
+    width: 97%;
+    height: 3px;
+    margin: 6vh 0 4vh 0;
+    background: white;
+}
+
+
+footer .content_mid h2{
+    font-size: 25px;
+}
+footer .box_icon1{
+    margin-top: 4vh;
+    display: flex;
+    justify-content: space-between;
+
+    width: 40vh;
+    /* border: 2px solid blue; */
+}
+footer .content_mid a{
+    color: white;
+}
+
+footer .logo1{
+    height: 100px;
+    width: 150px;
+    cursor: pointer;
+    position: absolute;
+    right: 5vh;
+}
+
+
+footer .content_bot{
+    margin-top: 12vh;
+}
+footer .content_bot h2{
+    font-size: 30px;
+}
+footer .content_bot p:nth-child(2){
+    margin-top: 2vh;
+}
+footer .content_bot p{
+    margin-top: 1vh;
+    font-size: 20px;
+}
+
+footer .content_bot p:nth-child(5){
+    position: absolute;
+    bottom: 10px;
+    margin-left: 15vh;
+
 }
