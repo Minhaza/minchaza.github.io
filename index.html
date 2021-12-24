@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
@@ -23,9 +25,9 @@
             <nav >
                 <ul class="nav_items">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#news">About us</a></li>
-                    <li><a href="#contact">Places to go</a></li>
-                    <li><a href="#place">Things to do</a></li>
+                    <li><a href="#about_us">About us</a></li>
+                    <li><a href="#places_to_go">Places to go</a></li>
+                    <li><a href="#things_to_do">Things to do</a></li>
                 </ul>
 
                 <a href="#home" class="logo1"></a>
@@ -42,10 +44,10 @@
                     <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
 
                     <div class="overlay_content">
-                        <a href="#">Home</a>
-                        <a href="#">About us</a>
-                        <a href="#">Places to go</a>
-                        <a href="#">Things to do</a>
+                        <a href="#home">Home</a>
+                        <a href="#about_us">About us</a>
+                        <a href="#places_to_go">Places to go</a>
+                        <a href="#things_to_do">Things to do</a>
 
                     </div>
                 </div>
@@ -56,9 +58,13 @@
 
         <!-- content -->
         <div class = "small_container">
+            <a id="back_to_top" onclick = "scrollToTop()">
+                <i class="fas fa-arrow-alt-circle-up fa-3x"></i>
+            </a>
             
+
             <!-- section 1 -->
-            <section class = "sect1" >
+            <section class = "sect1" id = "home">
                 
                 <div class="logo2" id="logo"> </div>
 
@@ -66,11 +72,11 @@
                 <!-- Slideshow1 -->
 
                 <div class = "slideshow_container">
-                     <a href="#home"  onclick="plusSlides(-1)">
+                     <a href="javascript:void(0)"  onclick="plusSlides(-1)">
                         <i class="fas fa-angle-double-left fa-3x"></i>
                     </a>
     
-                    <a href="#home" onclick="plusSlides(1)">
+                    <a href="javascript:void(0)" onclick="plusSlides(1)">
                         <i class="fas fa-angle-double-right fa-3x"></i>
                     </a>
     
@@ -88,15 +94,44 @@
                     </div>
     
                     <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide2(1)"></span>
-                        <span class="dot" onclick="currentSlide2(2)"></span>
-                        <span class="dot" onclick="currentSlide2(3)"></span>
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
                     </div>
 
 
                 </div>
                    
-               
+                <div class = "content_bot">
+                    <div class = "box_icon1">
+                        <div class = "icon">
+                            <a href="https://www.facebook.com/profile.php?id=100011263860993">
+                                <i class="fab fa-facebook-f" style = "padding: 5px 10px 5px 10px"></i>
+                            </a>
+                        </div>
+    
+                        <div class = "icon">                                
+                          <a href="https://www.instagram.com/__minhchauu__/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+    
+                        <div class = "icon">
+                            <a href="javascript:void(0)">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+    
+                        <div class = "icon">
+                            <a href="javascript:void(0)">
+                                <i class="fab fa-weibo"></i>
+                            </a>
+                        </div>
+                    </div>
+    
+                </div>
+
+                
 
 
             </section>
@@ -152,7 +187,7 @@
                 
                 <div class = "quote">
                     <div class = "content">
-                        <p>Life's too short for ordinary. That's why we've spent 17 years finding, visisting and choosing brilliant places to stay.</p>
+                        <p>Life's too short for ordinary. That's why we've spent 17 years finding, visisting <br>and choosing brilliant places to stay.<br></p>
                         <p>For people who love special.</p>
                     </div>
                 </div>
@@ -160,7 +195,7 @@
 
             <!-- section 5 -->
             <!-- Places to go -->
-            <section class = "sect5">
+            <section class = "sect5" id = "places_to_go">
                 <div
                     style = "background-color: #333333; width: 90vh; height: 100%; position: absolute; z-index: -5;">
                 </div>
@@ -169,14 +204,14 @@
                     <h1>Japan Attractions</h1>
                     <p>-Places to go</p>
                     <p>See centuries-old shrines, explore pristine national parks, shop in chic urban centers or simply relax on an island beach resort.</p>
-                    <a href = "">Click here</a>
+                    <a href = "Places-to-go.html">Click here</a>
                 </div>
                 <div class = "img7"></div>
             </section>
 
              <!-- section 6 -->
              <!-- Things to do -->
-             <section class = "sect6">
+             <section class = "sect6" id = "things_to_do">
                 <div
                     style = "background-color: #333333; width: 90vh; height: 100%; position: absolute; z-index: -5;">
                 </div>
@@ -206,61 +241,21 @@
              <!-- Slideshow -->
              <section class = "sect7">
 
-                <!-- <div class = "slideshow_container">
-                    <a href="#home" onclick="plusSlides2(-1)">
-                        <i class="fas fa-angle-double-left fa-3x"></i>
-                    </a>
-    
-                    <a href="#home" onclick="plusSlides2(1)">
-                        <i class="fas fa-angle-double-right fa-3x"></i>
-                    </a>
-                    
-                    <div class="caption_container">
-                        <p id="caption"></p>
-                      </div>
-    
-                    <div class="mySlides2">
-                        <div class="numberText">1 / 6</div>
-                        <img src="images/P1-sect-1(1).jpg" class="fade">
+                <div class = "img_container">
+                    <div class = "img10">
+                        <img src="images/P1-sect-7(2).jpg" alt="Spring in Japan">
                     </div>
-    
-                    <div class="mySlides2">
-                        <div class="numberText">2 / 6</div>
-                        <img src="images/Bg3(2).jpg" class="fade">
+                    <div class = "img11">
+                        <img src="images/P1-sect-7(3).jpg" alt="Summer in Japan">
                     </div>
-    
-                    <div class="mySlides2">
-                        <div class="numberText">3 / 6</div>
-                        <img src="images/Bg4(1).jpg" class="fade">
+                    <div class = "img12">
+                        <img src="images/P1-sect-7(4).jpg" alt="Autumn in Japan">
                     </div>
-    
-                <div class = "row">
-                    <div class = "column">
-                        <div class="mySlides2">
-                            <img src="images/P1-sect-1(1).jpg" class="gallery fade cursor" onclick = "currentSlide2(1)" alt = "One">
-                        </div>
-                        
+                    <div class = "img13">
+                        <img src="images/P1-sect-7(5).jpg" alt="Winter in Japan">
                     </div>
-                    <div class = "column">
-                        <div class="mySlides2">
-                            <img src="images/Bg3(2).jpg" class="gallery fade cursor" onclick = "currentSlide2(2)"  alt = "Tw0">
-                        </div>
-                        
-                    </div>
-                    <div class = "column">
-                        <div class="mySlides2">
-                            <img src="images/Bg4(1).jpg" class="gallery fade cursor" onclick = "currentSlide2(3)"  alt = "Three">
-                        </div>
-                    </div>
-
                 </div>
 
-                </div>
-                -->
-
-                <!-- <div class = "img10"></div>
-                <div class = "img11"></div>
-                <div class = "img12"></div> -->
           
             </section>
 
@@ -342,7 +337,7 @@
             </section>
         </div>
 
-        <footer>
+        <footer id = "about_us">
             <section class = "map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3233.283011475036!2d139.5116334151305!3d35.866580780151516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018dcbb7278c48d%3A0xff126c6d26fe25be!2zTmjhuq10IELhuqNuLCDjgJIzNTYtMDA0MSBTYWl0YW1hLCBGdWppbWlubywgVHN1cnVnYW1haSwgMS1jaMWNbWXiiJIyMOKIkjUg44K144Oz44Kz44O844Od5LiK56aP5bKh!5e0!3m2!1svi!2s!4v1639973676472!5m2!1svi!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </section>
@@ -366,7 +361,7 @@
                         <a href="#home" class="logo1"> </a>
                         <h2>WE'RE SO SOCIAL!</h2>
 
-                        <div class = "box_icon1">
+                        <div class = "box_icon2">
                             <div class = "icon">
                                 <a href="https://www.facebook.com/profile.php?id=100011263860993">
                                     <i class="fab fa-facebook-f fa-3x"></i>

@@ -3,16 +3,50 @@ console.log('script.js says "I\'m here"');
 
 // This is menu
 function openMenu() {
-    document.getElementById("menu").style.width = "100%";
-    document.getElementById("logo").style.opacity = "0%";
-
+  document.getElementById("menu").style.width = "100%";
+  document.getElementById("logo").style.opacity = "0%";
 
 }
 function closeMenu() {
-    document.getElementById("menu").style.width = "0%";
-    document.getElementById("logo").style.opacity = "100%";
+  document.getElementById("menu").style.width = "0%";
+  document.getElementById("logo").style.opacity = "100%";
 
 }
+
+$(function(){
+  $(".nav_items a").on('click', function(){
+      $("html, body").animate({
+          scrollTop: $($.attr(this, 'href')).offset().top
+     }, 500); // 500 = 0.5 second
+  });
+});
+
+
+
+// Back to top
+function show(){
+  document.getElementById("back_to_top").style.opacity= "100%";
+  document.getElementById("back_to_top").style.visibility = "visible";
+}
+function hide(){
+  document.getElementById("back_to_top").style.opacity= "0%";
+  document.getElementById("back_to_top").style.visibility = "hidden";
+}
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 100) {
+    show();
+  } else {
+    hide();
+  }
+});
+
+function scrollToTop(){
+  $('html, body').animate({scrollTop:0}, '300');
+}
+
+
+
 
 var slideIndex = 1;
 
@@ -20,61 +54,34 @@ var slideIndex = 1;
 
 // Next/previous controls
 function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
+  showSlides(slideIndex += n);
+}
   
 // Thumbnail image controls
 function currentSlide(n) {
-    showSlides(slideIndex = n);
+  showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides1");
-    var dots = document.getElementsByClassName("dot");
+  var i;
+  var slides = document.getElementsByClassName("mySlides1");
+  var dots = document.getElementsByClassName("dot");
 
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
 
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
 }
 
 
 
-// var slideIndex2 = 1;
-
-// function plusSlides2(n2) {
-//   showSlides2(slideIndex2 += n2);
-// }
-
-// function currentSlide2(n2) {
-//   showSlides2(slideIndex2 = n2);
-// }
-
-// function showSlides2(n2) {
-//   var j;
-//   var slides2 = document.getElementsByClassName("mySlides2");
-//   var dots2 = document.getElementsByClassName("gallery");
-//   var captionText = document.getElementById("caption");
-//   if (n2 > slides2.length) {slideIndex2 = 1}
-//   if (n2 < 1) {slideIndex2 = slides2.length}
-//   for (j = 0; j < slides2.length; j++) {
-//       slides2[j].style.display = "none";
-//   }
-//   for (j = 0; j < dots2.length; j++) {
-//       dots2[j].className = dots2[j].className.replace(" active", "");
-//   }
-//   slides2[slideIndex2 - 1].style.display = "block";
-//   dots2[slideIndex2 - 1].className += " active";
-//   captionText.innerHTML = dots2[slideIndex2 - 1].alt;
-// }
 
 
 // // This is hiding navbar 
