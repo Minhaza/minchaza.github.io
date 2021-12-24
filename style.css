@@ -32,22 +32,27 @@ h1{
     font-family: 'Nunito', sans-serif;
 }
 h2{
-    font-size: 30px;
-    font-weight: 900;
+    /* font-size: 30px;
+    font-weight: 900;*/
+
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: #FF914D;
+
     font-family: 'Nunito', sans-serif;
 }
 
 
 /* icon */
 .logo1{
-    background-image: url(images/logo_white2.png);
+    background-image: url(images/page1/logo_white2.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .logo2{
-    background-image: url(images/500x500.png);
+    background-image: url(images/page1/500x500.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -83,11 +88,6 @@ header{
     /* opacity: 0%; */
 }
 
-/* @media screen and (max-width: 600px) {
-    header {
-        height: 30px;
-    }
-} */
 header .logo1{
     height: 50px;
     width: 100px;
@@ -342,7 +342,7 @@ nav{
     background-color: #ffffffbb;
 }
   
-.box_icon1{
+.sect1 .box_icon{
     display: flex;
     width: 100px;
     height: 50px;
@@ -351,17 +351,17 @@ nav{
     font-size: 2vw;
     
 }
-.box_icon1 i{
+.sect1 .box_icon i{
     margin-right: 30px;
     padding: 5px 5px 5px 5px;
     color: white;
 }
-.box_icon1 i:hover{
+.sect1 .box_icon i:hover{
     color: #FF914D;
     background-color: white;
     border-radius: 10px;
 }
-.box_icon1 i:active{
+.sect1 .box_icon i:active{
     color: #FF914D;
     background-color: #555;
     border-radius: 10px;
@@ -405,7 +405,7 @@ nav{
     height: 80vh;
     margin: 1vh 0 0 85vh;
     
-    background-image: url("images/P1-sect-2.jpg");
+    background-image: url("images/page1/P1-sect-2.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -420,7 +420,7 @@ nav{
     height: 80vh;
     margin: 8vh 0 0 145vh;
 
-    background-image: url("images/P1-sect-2(2).jpg");
+    background-image: url("images/page1/P1-sect-2(2).jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -434,7 +434,7 @@ nav{
     width: 120vh;
     height: 100%;
 
-    background-image: url("images/P1-sect-3(1).jpg");
+    background-image: url("images/page1/P1-sect-3(1).jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -453,7 +453,7 @@ nav{
 }
 
 
-.sect3 p:nth-child(2){
+.sect3 h2{
     font-size: 20px;
     padding-bottom: 20px;
     color: rgb(255, 166, 0);
@@ -477,7 +477,7 @@ nav{
     width: 100%;
     height: 50%;
     
-    background-image: url("images/123-removebg-preview.png");
+    background-image: url("images/page1/123-removebg-preview.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -548,7 +548,7 @@ nav{
     height: 80vh;
     margin: 10vh 0 0 80vh;
 
-    background-image: url("images/P1-sect-5.jpg");
+    background-image: url("images/page1/P1-sect-5.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -606,7 +606,7 @@ nav{
     height: 95vh;
     margin: 5vh 0 0 90vh;
 
-    background-image: url("images/P1-sect-6\(1\).jpg");
+    background-image: url("images/page1/P1-sect-6(1).jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -654,7 +654,6 @@ nav{
     height: 18vh;
     margin-top: 7vh;
     text-align: center;
-    
 }
 
 .sect8 .content_top h1{
@@ -682,6 +681,11 @@ nav{
     top: 35%;
     position: absolute;
 }
+.sect8 h2{
+    color: black;
+    font-size: 30px;
+    font-weight: 900;
+}
 
 .sect8 .content_top p{
     font-size: 30px;
@@ -699,7 +703,7 @@ nav{
     /* border: 5px solid blue ; */
 }
 .sect8 .content_bot .icon{
-    color: #FF914D;
+    color: orange;
 }
 
 .sect8 .content_bot h2{
@@ -718,6 +722,11 @@ nav{
 footer{
     height: 100vh;
     color: white;
+}
+footer h2{
+    font-size: 30px;
+    font-weight: 900;
+    color: orange;
 }
 
 .map{
@@ -800,8 +809,7 @@ footer .line{
 footer .content_mid h2{
     font-size: 1.7vw;
 }
-footer .box_icon2{
-    margin-top: 4vh;
+footer .box_icon{
     display: flex;
     justify-content: space-between;
 

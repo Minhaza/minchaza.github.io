@@ -7,8 +7,8 @@
     display: flex;
 
 }
-.img14{
-    background-image: url(images/P2-sect-1.png);
+.img1{
+    background-image: url(images/page2/P2-sect-1.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -58,3 +58,56 @@
     transform: scale(0.30, 0.30) rotate(60deg);
 
 }
+
+/* sect2 */
+.sect2{
+    display: flex;
+}
+
+.sect2 .box_container{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    margin-top: 15vh;
+    left: 0;
+    right: 0;
+
+    width: 95%;
+    height: 70%;
+
+    border: 2px solid blue;
+}
+.sect2 h1{
+    color: white;
+}
+.sect2 .box1{
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    width: 60%;
+    height: 100%;
+
+    background-color: #333333;
+    border: 2px solid orange;
+}
+.img2{
+    background-image: url(images/page2/P2-sect-2-Tokyo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 50%;
+    width: 100%;
+}
+
+
+.sect2 .box2{
+    float: right;
+    width: 37%;
+    height: 100%;
+
+    color: white;
+    border: 2px solid orange;
+}
+
