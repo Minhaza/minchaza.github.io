@@ -304,6 +304,7 @@ footer .content_top a{
 
     font-weight: 900;
     font-family: 'Nunito', sans-serif;
+    font-size: 1vw;
 
     background-color: #FF914D;
     box-shadow: 2px 4px;
@@ -358,13 +359,10 @@ footer .logo1{
 
 
 footer .content_bot{
-    margin-top: 12vh;
+    margin-top: 8vh;
 }
 footer .content_bot h2{
     font-size: 2vw;
-}
-footer .content_bot p:nth-child(2){
-    margin-top: 2vh;
 }
 footer .content_bot p{
     margin-top: 1vh;
