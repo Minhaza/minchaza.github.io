@@ -1,13 +1,24 @@
 @import "style.css";
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Nunito:ital,wght@0,700;0,800;0,900;1,700&family=Raleway:wght@900&display=swap');
 
-
-/* sect1 */
-.sect1{
-    display: flex;
-
+h1{
+    color: white;
+    font-size: 3vw;
 }
-.img1{
+p{
+    color: white;
+}
+section{
+    display: flex;
+}
+
+
+.img_container{
+    background-color: white; 
+    height: 50%; 
+    width: 100%;
+}
+/* sect1 */
+.sect1 .bg{
     background-image: url(images/page2/P2-sect-1.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -16,10 +27,8 @@
     position: absolute;
     height: 100%;
     width: 100%;
-
-
 }
-.box1{
+.sect1 .box1{
     position: absolute;
     text-align: center;
     margin-left: auto;
@@ -34,7 +43,7 @@
     border: 12px solid white;
 }
 
-.inner_box1{
+.sect1 .inner_box1{
     height: 85%;
     width: 98.5%;
    
@@ -44,11 +53,11 @@
     background-color: rgba(255, 255, 255, 0.898);
 }
 
-.box1 p{
+.sect1 .box1 p{
     display: table-cell;
     vertical-align: middle;
     color: #FF914D;
-    font-size: 2.5em;
+    font-size: 2.5vw;
     font-family: 'Faustina', serif;
 }
 .sect1 .icon{
@@ -59,16 +68,15 @@
 
 }
 
-/* sect2 */
-.sect2{
-    display: flex;
-}
 
+
+/* sect2 */
 .sect2 .box_container{
-    position: absolute;
+
     margin-left: auto;
     margin-right: auto;
-
+    display: flex;
+    justify-content: space-between;
 
     margin-top: 15vh;
     left: 0;
@@ -76,38 +84,267 @@
 
     width: 95%;
     height: 70%;
-
-    border: 2px solid blue;
+/* 
+    border: 2px solid blue; */
 }
 .sect2 h1{
-    color: white;
+    padding-bottom: 0 
 }
+.sect2 h2{
+    padding-top: 10px;
+}
+.sect2 p{
+    font-size: 1.5vw;
+    padding-top: 10px;
+}
+
 .sect2 .box1{
-    margin-top: 0 !important;
-    margin-left: 0 !important;
+
     width: 60%;
     height: 100%;
 
     background-color: #333333;
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
 }
-.img2{
+.sect2 .box1 .content{
+    margin-left: 4vh;
+    margin-top: 2vh;
+}
+
+.sect2 .img1{
     background-image: url(images/page2/P2-sect-2-Tokyo.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 
-    height: 50%;
+    height: 100%;
     width: 100%;
 }
 
-
 .sect2 .box2{
-    float: right;
     width: 37%;
     height: 100%;
 
-    color: white;
-    border: 2px solid orange;
+    background-color: #333333;
+    /* border: 2px solid orange; */
+    
 }
+
+.sect2 .box2 .content{
+    margin-left: 4vh;
+    margin-top: 2vh;
+}
+.sect2 .img2{
+    background-image: url(images/page2/P2-sect-2-Kyoto.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100%;
+    width: 100%;
+}
+.sect2 .img1:hover, .img2:hover{
+    opacity: 80%;
+}
+
+
+/* sect3 */
+
+.sect3 p{
+    font-size: 1.5vw;
+}
+
+.sect3 .icon{
+    position: absolute;
+    margin-top: 6vh;
+    margin-left: 2vh;
+    width: 100px;
+    height: 100px;
+    
+}
+.sect3 .box_container{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 10vh;
+    left: 0;
+    right: 0;
+
+    width: 95%;
+    height: 80%;
+/* 
+    border: 2px solid blue; */
+}
+
+.sect3 .content{
+    margin-left: 4vh;
+    margin-top: 2vh;
+    width: 90%;
+}
+.sect3 .box1{
+    /* border: 2px solid orange; */
+    width: 32%;
+    background-color: #333333;
+}
+.sect3 .img3{
+    background-image: url(images/page2/P2-sect-3-Osaka.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100%;
+    width: 100%;
+
+}
+
+.sect3 .box2{
+    /* border: 2px solid orange; */
+    width: 32%;
+    background-color: #333333;
+}
+.sect3 .img4{
+    background-image: url(images/page2/P2-sect-3-Hokkaido.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100%;
+    width: 100%;
+
+}
+.sect3 .box3{
+    /* border: 2px solid orange; */
+    width: 32%;
+    background-color: #333333;
+}
+.sect3 .img5{
+    background-image: url(images/page2/P2-sect-3-Hakone.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100%;
+    width: 100%;
+}
+
+.sect3 .img3:hover, .img4:hover, .img5:hover{
+    opacity: 80%;
+}
+
+
+/* sect4 */
+
+.sect4 .bg{
+    background-image: url(images/page2/P2-sect-4.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.sect4 .content_container{
+    width: 35%;
+    height: 100vh;
+    background-color: #342d34c6;
+    float: right;
+}
+.sect4 .content{
+    margin-top: 20vh;
+    margin-left: 4vh;
+    width: 90%;
+}
+.sect4 h3{
+    color: white;
+    font-size: 1.8vw;
+    margin-top: 20px;
+}
+
+.sect4 p{
+    margin-top: 25px;
+    font-size: 1.5vw;
+    text-align: justify;
+}
+
+
+
+/* sect5 */
+
+.sect5 .content_top h1, .sect6 .content_top h1{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+    left: 0;
+    right: 0;
+
+    color: orange;
+}
+
+.sect5 .content_mid, .sect6 .content_mid{
+    /* position: absolute; */
+    background-color: #333333;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.25vh;
+    left: 0;
+    right: 0;
+
+    width: 90%;
+    height: 80%;
+
+    /* border: 2px solid blue; */
+}
+.sect5 .img_container, .sect6 .img_container{
+    height: 65%;
+    width: 100%;
+}
+.sect5 .img6{
+    background-image: url(images/page2/P2-sect-5.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100%;
+    width: 100%;
+}
+.sect6 .img7{
+    background-image: url(images/page2/P2-sect-6.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100%;
+    width: 100%;
+}
+.sect5 .img6:hover, .sect6 .img7:hover{
+    opacity: 80%;
+}
+.sect5 .content{
+    margin-top: 3vh;
+    margin-left: 4vh;
+    width: 90%;
+}
+.sect6 .content{
+    margin-top: 6vh;
+    margin-left: 4vh;
+    width: 90%;
+}
+.sect5 .content h1, .sect6 .content h1{
+    color: white;
+    line-height: 1.1;
+    padding-bottom: 2px;
+}
+.sect5 .content h2, .sect6 .content h2{
+    padding-top: 10px;
+}
+
+
+
 
