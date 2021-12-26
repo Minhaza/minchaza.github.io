@@ -185,7 +185,6 @@ section{
     width: 100px;
     height: 100px;
     z-index: 1;
-    
 }
 .sect3 .box_container{
     margin-left: auto;
@@ -221,6 +220,7 @@ section{
 
     height: 100%;
     width: 100%;
+    
 
 }
 
@@ -258,6 +258,7 @@ section{
 .img4:hover, 
 .img5:hover{
     opacity: 80%;
+
 }
 
 

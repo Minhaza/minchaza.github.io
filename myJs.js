@@ -3,24 +3,19 @@ console.log('script.js says "I\'m here"');
 
 // This is menu
 function openMenu() {
-  document.getElementById("menu").style.width = "100%";
-  document.getElementById("logo").style.opacity = "0%";
-
+  document.getElementById("menu").style.width = "25%";
 }
 function closeMenu() {
   document.getElementById("menu").style.width = "0%";
-  document.getElementById("logo").style.opacity = "100%";
-
 }
 
 $(function(){
-  $(".nav_items a").on('click', function(){
+  $(".nav_items a, .logo1") .on('click', function(){
       $("html, body").animate({
           scrollTop: $($.attr(this, 'href')).offset().top
      }, 500); // 500 = 0.5 second
   });
 });
-
 
 
 // Back to top
@@ -79,8 +74,6 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
-
-
 
 
 
