@@ -107,34 +107,74 @@ header .logo1{
     
 }
 
-#back_to_top {
-    display: inline-block;
-    color: #FF914D;
+/* back to top */
+.arrow-10 {
+    margin-top: 7px;
+    margin-left: 15px;
 
-    /* background-color: #FF9800; */
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    border-radius: 4px;
+    width:30px;
+    height:40px;
+    padding-top: 60px;
+    display: grid;
+    background: 
+      linear-gradient(currentColor 0 0) bottom/5px calc(100% - 6px),
+      conic-gradient(from 134deg at top,rgba(0, 0, 0, 0) ,currentColor 1deg 90deg,#0000 91deg) top/100% 6px;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    animation: a10-0 2s infinite;
+  }
+  .arrow-10:before,
+  .arrow-10:after {
+    content: "";
+    grid-area: 1/1;
+    background:inherit;
+    background-size: 5px calc(100% - 15px),100% 15px;
+    animation: a10-1 2s infinite;
+  }
+  .arrow-10:after {
+    background-size: 5px calc(100% - 20px),100% 20px;
+    animation: a10-2 2s infinite;
+  }
+  @keyframes a10-0 {
+    25%,100% {padding-top:0px}
+  }
+  
+  @keyframes a10-1 {
+    0%,25%   {margin:40px -10px 0}
+    50%,100% {margin:3px  -10px 0}
+  }
+  @keyframes a10-2 {
+    0%,50%   {margin:40px -15px 0}
+    75%,100% {margin:11px -15px 0}
+  }
+
+#back_to_top {
+
+    color: white;
+    position: absolute;
+    /* border: 5px solid blue; */
+    background-color: orange;
+    border-radius: 100%;
+
+    width: 60px;
+    height: 60px;
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 25px;
+    right: 25px;
+
     transition: background-color .3s, opacity .5s, visibility .5s;
     opacity: 0;
     visibility: hidden;
+    cursor: pointer;
     z-index: 2;
 }
 
 #back_to_top:hover {
-    cursor: pointer;
-    color: rgb(226, 68, 68);
-}
-#back_to_top:active {
-    color: #555;
+    background-color: none;
+    color: 	#d0ff26;
 }
 
-
-
+/* nav */
 nav{
     width: 100%;
     top: 0;

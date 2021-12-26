@@ -40,7 +40,11 @@ function scrollToTop(){
   $('html, body').animate({scrollTop:0}, '300');
 }
 
-
+$('.round').click(function(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  $('.arrow').toggleClass('bounceAlpha');
+});
 
 
 var slideIndex = 1;
