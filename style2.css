@@ -18,6 +18,7 @@ section{
     width: 100%;
 }
 /* sect1 */
+
 .sect1 .bg{
     background-image: url(images/page2/P2-sect-1.png);
     background-position: center center;
@@ -35,15 +36,30 @@ section{
     margin-right: auto;
 
 
-    margin-top: 40vh;
+    margin-top: 35vh;
     left: 0;
     right: 0;
+    width: 75%;
+    height: 160px;
+
+    /* border: 5px solid blue; */
+}
+.sect1 .inner_box1{
+    position: absolute;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    bottom: 0;
+    left: 0;
+    right: 0; 
     height: 125px;
-    width: 70%;
+    width: 95%;
+    /* width: 70%; */
     border: 12px solid white;
 }
 
-.sect1 .inner_box1{
+.sect1 .inner_box2{
     height: 85%;
     width: 98.5%;
    
@@ -53,7 +69,7 @@ section{
     background-color: rgba(255, 255, 255, 0.898);
 }
 
-.sect1 .box1 p{
+.sect1 .inner_box2 p{
     display: table-cell;
     vertical-align: middle;
     color: #FF914D;
@@ -61,11 +77,14 @@ section{
     font-family: 'Faustina', serif;
 }
 .sect1 .icon{
+    height: 100px;
+    width: 85px;
+    /* transform: scale(0.30, 0.30) rotate(60deg); */
+}
+.sect1 .box_icon{
     position: absolute;
-    margin-left: 6vw;
-    margin-top: 3vh;
-    transform: scale(0.30, 0.30) rotate(60deg);
-
+    left: 0;
+    top: 0;
 }
 
 
@@ -143,7 +162,8 @@ section{
     height: 100%;
     width: 100%;
 }
-.sect2 .img1:hover, .img2:hover{
+.sect2 .img1:hover, 
+.img2:hover{
     opacity: 80%;
 }
 
@@ -160,6 +180,7 @@ section{
     margin-left: 2vh;
     width: 100px;
     height: 100px;
+    z-index: 1;
     
 }
 .sect3 .box_container{
@@ -229,7 +250,9 @@ section{
     width: 100%;
 }
 
-.sect3 .img3:hover, .img4:hover, .img5:hover{
+.sect3 .img3:hover, 
+.img4:hover, 
+.img5:hover{
     opacity: 80%;
 }
 
@@ -275,7 +298,7 @@ section{
 
 /* sect5 */
 
-.sect5 .content_top h1, .sect6 .content_top h1{
+.sect5 .content_top h1{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -285,9 +308,7 @@ section{
 
     color: orange;
 }
-
-.sect5 .content_mid, .sect6 .content_mid{
-    /* position: absolute; */
+.sect5 .content_mid{
     background-color: #333333;
 
     margin-left: auto;
@@ -301,7 +322,22 @@ section{
 
     /* border: 2px solid blue; */
 }
-.sect5 .img_container, .sect6 .img_container{
+.sect6 .content_mid{
+    background-color: #333333;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8vh;
+    left: 0;
+    right: 0;
+
+    width: 90%;
+    height: 80%;
+
+    /* border: 2px solid blue; */
+}
+.sect5 .img_container, 
+.sect6 .img_container{
     height: 65%;
     width: 100%;
 }
@@ -323,7 +359,8 @@ section{
     height: 100%;
     width: 100%;
 }
-.sect5 .img6:hover, .sect6 .img7:hover{
+.sect5 .img6:hover, 
+.sect6 .img7:hover{
     opacity: 80%;
 }
 .sect5 .content{
@@ -336,12 +373,14 @@ section{
     margin-left: 4vh;
     width: 90%;
 }
-.sect5 .content h1, .sect6 .content h1{
+.sect5 .content h1,
+.sect6 .content h1{
     color: white;
     line-height: 1.1;
     padding-bottom: 2px;
 }
-.sect5 .content h2, .sect6 .content h2{
+.sect5 .content h2, 
+.sect6 .content h2{
     padding-top: 10px;
 }
 
