@@ -90,6 +90,9 @@ section{
 
 
 /* sect2 */
+.sect2{
+    height: 85vh !important;
+}
 .sect2 .box_container{
 
     margin-left: auto;
@@ -97,12 +100,12 @@ section{
     display: flex;
     justify-content: space-between;
 
-    margin-top: 15vh;
+    margin-top: 10vh;
     left: 0;
     right: 0;
 
     width: 95%;
-    height: 70%;
+    height: 70vh;
 /* 
     border: 2px solid blue; */
 }
@@ -141,7 +144,7 @@ section{
 }
 
 .sect2 .box2{
-    width: 37%;
+    width: 38%;
     height: 100%;
 
     background-color: #333333;
@@ -169,14 +172,15 @@ section{
 
 
 /* sect3 */
-
+.sect3{
+    height: 95vh !important;
+}
 .sect3 p{
     font-size: 1.5vw;
 }
 
 .sect3 .icon{
     position: absolute;
-    margin-top: 6vh;
     margin-left: 2vh;
     width: 100px;
     height: 100px;
@@ -189,12 +193,12 @@ section{
     display: flex;
     justify-content: space-between;
 
-    margin-top: 10vh;
+    margin-top: 5vh;
     left: 0;
     right: 0;
 
     width: 95%;
-    height: 80%;
+    height: 80vh;
 /* 
     border: 2px solid blue; */
 }
