@@ -1,5 +1,4 @@
-console.log('script.js says "I\'m here"');
-
+console.log("I'm working");
 
 // This is menu
 function openMenu() {
@@ -47,9 +46,10 @@ $('.round').click(function(e) {
 });
 
 
-var slideIndex = 1;
+
 
 // This is changing background
+var slideIndex = 1;
 
 // Next/previous controls
 function plusSlides(n) {
