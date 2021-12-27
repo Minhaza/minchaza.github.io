@@ -2,7 +2,7 @@ console.log("I'm working");
 
 // This is menu
 function openMenu() {
-  document.getElementById("menu").style.width = "25%";
+  document.getElementById("menu").style.width = "25%"; // Lấy id menu
 }
 function closeMenu() {
   document.getElementById("menu").style.width = "0%";
@@ -15,7 +15,7 @@ $(function(){
      }, 500); // 500 = 0.5 second
   });
 });
-
+// Di chuyển đến sect có tên id
 
 // Back to top
 function show(){

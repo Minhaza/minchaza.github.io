@@ -7,16 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="HandheldFriendly" content="true">
     
-    <title>Home</title>
+    <title>Home</title> 
     <link rel="stylesheet" type="text/css" href="style1.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Animation !-->
 
 </head>
 
 <body>
-    <script type="text/javascript" src="myJs.js"></script>
+    <script type="text/javascript" src="myJs.js"></script> <!-- Javascript !-->
 
     <div class="container">
         <header id = "navbar">
@@ -33,7 +33,7 @@
                 <a href="#home" class="logo1"></a>
 
                 <!-- menu here -->
-                <div class="nav_menu" onclick="openMenu()">
+                <div class="nav_menu" onclick="openMenu()">  <!-- Mở menu (javascript) !-->
                     <div class="nav_icon">
                         <div class="bar1"></div>
                         <div class="bar2"></div>
@@ -41,7 +41,7 @@
                     </div>
                 </div>
                 <div id="menu" class="overlay">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>  <!-- Đóng menu !-->
 
                     <div class="overlay_content">
                         <a href="#home">Home</a>
@@ -51,7 +51,6 @@
 
                     </div>
                 </div>
-
             </nav>
 
         </header>
@@ -343,8 +342,10 @@
             <section class = "map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3233.283011475036!2d139.5116334151305!3d35.866580780151516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018dcbb7278c48d%3A0xff126c6d26fe25be!2zTmjhuq10IELhuqNuLCDjgJIzNTYtMDA0MSBTYWl0YW1hLCBGdWppbWlubywgVHN1cnVnYW1haSwgMS1jaMWNbWXiiJIyMOKIkjUg44K144Oz44Kz44O844Od5LiK56aP5bKh!5e0!3m2!1svi!2s!4v1639973676472!5m2!1svi!2s" width="50%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </section>
+
             <div class = "content">
                 <div style = "margin-left: 3vh;">
+                    
                     <div class = "content_top">
                         <h2>If you love travel, let us inspire you!</h2>
     
@@ -352,6 +353,7 @@
                             <form action="">
                                 <input type = "text" name ="email" placeholder = "Your email address">
                             </form>
+                            <!-- Chỗ để nhập email -->
                             <a href = "javascript:void(0)">SIGN ME UP</a>
                         </div>
                     </div>
@@ -411,6 +413,7 @@
         <script>
             showSlides(slideIndex);
         </script>
+        
     </div>
 
 
