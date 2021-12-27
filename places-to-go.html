@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Places To Go</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <script type="text/javascript" src="myJs.js"></script>
+    <div class = "container">
+        <header id = "navbar">
+
+            <!-- navbar here -->
+            <nav>
+                <ul class="nav_items">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about-us">About us</a></li>
+                    <li><a href="places-to-go.html">Places to go</a></li>
+                    <li><a href="things-to-do.html">Things to do</a></li>
+                </ul>
+
+                <a href="#home" class="logo1"></a>
+
+                <!-- menu here -->
+                <div class="nav_menu" onclick="openMenu()">
+                    <div class="nav_icon">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+                <div id="menu" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+
+                    <div class="overlay_content">
+                        <a href="index.html">Home</a>
+                        <a href="#about-us">About us</a>
+                        <a href="places-to-go.html">Places to go</a>
+                        <a href="things-to-do.html">Things to do</a>
+
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+
+
+        <!-- content -->
+        <div class = "small_container">
+
+
+                <a id="back_to_top" onclick = "scrollToTop()">
+                    <!-- <i class="fas fa-arrow-alt-circle-up fa-3x"></i> -->
+                    <div class="arrow-10"></div>
+                </a>
+
+
+            <!-- sect1 -->
+            <section class = "sect1" id = "home">
+
+               <div class = "bg"></div>
+
+               <div class = "box1">
+                    <div class = "inner_box1">
+                        <div class = "inner_box2">
+                            <p>“A great resource to find that extra special place to stay.”</p>
+                        </div>
+                    </div>
+
+                        <img class = "icon1" src="images/page2/tl(1).png" alt="">
+                </div>
+
+                <div class = "icon2">
+                    <!-- <i class="far fa-arrow-alt-circle-down fa-3x"></i> -->
+                    <a class = "button" href="#section2">
+                        <i class="fas fa-angle-double-down fa-2x"></i>
+                    </a>
+                </div>
+
+            </section>
+
+
+            <!-- sect2 -->
+            <section class = "sect2" id = "section2">
+                <div class = "box_container">
+                    <div class = "box1">
+                        <div class = "img_container">
+                            <div class = "img1"></div>
+                        </div>
+
+                        
+                        <div class = "content">
+                            <h1>Tokyo</h1>
+                            <h2>~ Places to go</h2>
+                            <p>High rise, fast-paced and neon-lit, Tokyo is as futuristic as it is historical...</p>
+                        </div>
+                    </div>
+                    <div class = "box2">
+                        <div class = "img_container">
+                            <div class = "img2"></div>
+                        </div>
+                        
+
+                        <div class = "content">
+                            <h1>Kyoto</h1>
+                            <h2>~ Places to go</h2>
+                            <p>The old imperial capital and cultural heart of Japan...</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- sect3 -->
+            <section class = "sect3">
+                <div class = "icon_box">
+                    <img class = "icon" src="images/page2/tl3.png" alt="">
+                </div>
+
+                <div class = "box_container">
+                    <div class = "box1">
+
+                        <div class = "img_container">
+                            <div class = "img3"></div>
+                        </div>
+                        
+                        <div class = "content">
+                            <h1>Osaka</h1>
+                            <h2>~ Places to go</h2>
+                            <p>Bright, gaudy and playful: Osaka provides ample amusement with little pretension...</p>
+                        </div>
+                    </div>
+                    <div class = "box2">
+
+                        <div class = "img_container">
+                            <div class = "img4"></div>
+                        </div>
+                        
+                        <div class = "content">
+                            <h1>Hokkaido</h1>
+                            <h2>~ Places to go</h2>
+                            <p>Explore Japan's northernmost prefecture...</p>
+                        </div>
+                    </div>
+                    <div class = "box3">
+
+                        <div class = "img_container">
+                            <div class = "img5"></div>
+                        </div>
+
+                        <div class = "content">
+                            <h1>Hakone</h1>
+                            <h2>~ Places to go</h2>
+                            <p>Famous hot springs, great heritage, and fantastic views of Mt Fuji at a world-class resort...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- sect4 -->
+            <section class = "sect4">
+                <div class = "bg"></div>
+
+                <div class = "content_container">
+                    <div class = "content">
+                        <h1>Pet cafés</h1>
+                        <h2>~ Places to go</h2>
+                        <h3>Because sometimes you just need <br> a furry friend.</h3>
+                        <p>Lovers of small, cute cats, beware: you might not want to leave this place. We wandered around for over an hour and still didn't want to leave the little ones...</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- sect5 -->
+            <section class = "sect5">
+                <div class = "content_top">
+                    <h1>Collections to inspire you</h1>
+                </div>
+
+                
+                <div class = "content_mid">
+
+                        <div class = "img_container">
+                            <div class = "img6"></div>
+                        </div>
+
+                    <div class = "content">
+                        <h1>Discover Japan’s 10 most spectacular <br> natural wonders</h1>
+                        <h2>~ Places to go</h2>
+                    </div>
+                </div>
+            </section>
+
+            <!-- sect6 -->
+            <section class = "sect6">
+                
+                <div class = "content_mid">
+
+                        <div class = "img_container">
+                            <div class = "img7"></div>
+                        </div>
+
+                    <div class = "content">
+                        <h1>The 10 best road trips in Japan</h1>
+                        <h2>~ Places to go</h2>
+                    </div>
+                </div>
+            </section>
+
+            <!-- sect7 -->
+            <section class = "sect7">
+                <div class = "bg"></div>
+
+                <div class = "content_container">
+                    <div class = "content">
+                        <h1>Tourist Attractions</h1>
+                        <h2>~ Places to go</h2>
+                        <h3>Discover the best places to visit in the country with our list of the top tourist attractions in Japan.</h3>
+                        <p>Many first-time visitors to Japan are often surprised to learn that, as one of the world's most advanced industrialized nations, this relatively small Asian country also boasts a rich and fascinating history that dates back thousands of years....</p>
+                    </div>
+                </div>
+
+            </section>
+
+
+
+
+        <!-- footer -->
+        <footer id = "about-us">
+            <section class = "map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3233.283011475036!2d139.5116334151305!3d35.866580780151516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018dcbb7278c48d%3A0xff126c6d26fe25be!2zTmjhuq10IELhuqNuLCDjgJIzNTYtMDA0MSBTYWl0YW1hLCBGdWppbWlubywgVHN1cnVnYW1haSwgMS1jaMWNbWXiiJIyMOKIkjUg44K144Oz44Kz44O844Od5LiK56aP5bKh!5e0!3m2!1svi!2s!4v1639973676472!5m2!1svi!2s" width="50%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+            <div class = "content">
+                <div style = "margin-left: 3vh;">
+                    <div class = "content_top">
+                        <h2>If you love travel, let us inspire you!</h2>
+    
+                        <div style = "display: flex">
+                            <form action="">
+                                <input type = "text" name ="email" placeholder = "Your email address">
+                            </form>
+                            <a href = "javascript:void(0)">SIGN ME UP</a>
+                        </div>
+                    </div>
+    
+                    <div class="line"></div>
+    
+                    <div class = "content_mid">
+
+                        <a href="#home" class="logo1"> </a>
+                        <h2>WE'RE SO SOCIAL!</h2>
+
+                        <div class = "box_icon">
+                            <div class = "icon">
+                                <a href="https://www.facebook.com/profile.php?id=100011263860993">
+                                    <i class="fab fa-facebook-f fa-3x"></i>
+                                </a>
+                            </div>
+    
+                            <div class = "icon">                                
+                              <a href="https://www.instagram.com/__minhchauu__/">
+                                    <i class="fab fa-instagram fa-3x"></i>
+                                </a>
+                            </div>
+
+                            <div class = "icon">
+                                <a href="javascript:void(0)">
+                                    <i class="fab fa-twitter fa-3x"></i>
+                                </a>
+                            </div>
+    
+                            <div class = "icon">
+                                <a href="javascript:void(0)">
+                                    <i class="fab fa-weibo fa-3x"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+  
+                            
+                    </div>
+                    
+                    <div class = "content_bot">
+                        <h2>CONTACT US</h2>
+                        <p>埼玉県、ふじみ野市、鶴ヶ舞、１−２０−５サンコーポ上福岡２０１</p>
+                        <p>077554xx</p>
+                        <p>minchaza.since2021@gmail.com</p>
+
+                        <p>@ SPRINCHAIZA Cooperation. All Rights Reserved.</p>
+                    </div>
+
+                </div>
+
+                
+            </div>
+        </footer>
+
+        </div>
+  
+        
+    </div>
+</body>
+</html>
