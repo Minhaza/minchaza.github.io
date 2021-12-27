@@ -10,7 +10,7 @@ function closeMenu() {
 }
 
 $(function(){
-  $(".nav_items a, .logo1") .on('click', function(){
+  $(".nav_items a, .logo1, .button") .on('click', function(){
       $("html, body").animate({
           scrollTop: $($.attr(this, 'href')).offset().top
      }, 500); // 500 = 0.5 second
