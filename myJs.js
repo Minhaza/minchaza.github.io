@@ -46,8 +46,6 @@ $('.round').click(function(e) {
 });
 
 
-
-
 // This is changing background
 var slideIndex = 1;
 
